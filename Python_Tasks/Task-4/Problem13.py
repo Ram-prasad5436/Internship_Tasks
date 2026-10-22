@@ -1,0 +1,14 @@
+# Problem 13: Symmetric Difference
+# HackerRank: https://www.hackerrank.com/challenges/symmetric-difference/problem
+
+if __name__ == '__main__':
+    m = int(input())
+    set_m = set(map(int, input().split()))
+
+    n = int(input())
+    set_n = set(map(int, input().split()))
+
+    result = sorted(set_m.symmetric_difference(set_n))
+
+    for value in result:
+        print(value)
